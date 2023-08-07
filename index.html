@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning JavaScript</title>
+</head>
+<body>
+    <ul id="mylist"></ul>
+    <input type="text" id="text">
+    <button onclick="myFun()" id="button">Bangladesh</button>
+    <script>
+        function myFun(){
+            let text = document.querySelector("#text").value;
+            let listItem = document.createElement("li");
+            listItem.innerText=text;
+            let myList = document.querySelector("#mylist");
+            myList.appendChild(listItem);
+            text.reset();
+        }
+    </script>
+</body>
+</html>
